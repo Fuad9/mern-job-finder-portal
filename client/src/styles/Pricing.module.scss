@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}
+
+.container > div {
+  border: 2px solid red;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  &:hover {
+    border: 2px solid orangered;
+  }
+}

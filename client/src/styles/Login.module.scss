@@ -1,0 +1,49 @@
+.loginContainer {
+  border: 1px solid green;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+
+  form {
+    display: flex;
+    justify-content: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 30rem;
+        outline: none;
+        border: 2px solid transparent;
+        margin: 0.8rem 0;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: #9febcd;
+
+        &:hover {
+          border: 2px solid green;
+          background: transparent;
+          color: lightgray;
+        }
+      }
+    }
+  }
+
+  > div {
+    padding: 1rem 0;
+
+    h6 {
+      color: red;
+    }
+
+    button {
+      width: 20%;
+
+      &:nth-child(1) {
+        padding: 0.87rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

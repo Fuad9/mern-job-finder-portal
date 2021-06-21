@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+
+  > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > li {
+      padding-right: 1rem;
+      font-size: 2rem;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.dashboardContainer {
+  input {
+    padding: 1rem;
+    width: 30rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 2px solid transparent;
+    color: orangered;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid green;
+    }
+  }
+
+  .dashboardItemBySearch {
+    padding: 2rem 0;
+
+    > div:nth-child(1) > div {
+      display: flex;
+
+      h5 {
+        padding-right: 1rem;
+      }
+    }
+
+    > div:nth-child(2) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+      > div:nth-child(2) {
+        border: 2px solid green;
+        border-radius: 1rem;
+        padding: 1rem;
+        max-height: 20rem;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      > div:nth-child(2) {
+        grid-template-columns: repeat(1, minmax(1fr, 1fr));
+      }
+    }
+  }
+}
